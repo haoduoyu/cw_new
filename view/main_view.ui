@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>754</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="openCameraBtn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>开启摄像头</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="7">
+     <widget class="QGraphicsView" name="cameraView"/>
+    </item>
+    <item row="0" column="2" rowspan="7">
+     <widget class="QGraphicsView" name="picView"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QComboBox" name="petKindSelect">
+      <item>
+       <property name="text">
+        <string>猫</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>狗</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>鼠</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="selectContractBtn">
+      <property name="text">
+       <string>选择联系人</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="openMonitorBtn">
+      <property name="text">
+       <string>开启实时监控</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="analysePicBtn">
+      <property name="text">
+       <string>分析照片</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="testInfoBtn">
+      <property name="text">
+       <string>测试信息</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="personalInfoBtn">
+      <property name="text">
+       <string>个人信息</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="3">
+     <widget class="QTextBrowser" name="infoTextBrowser">
+      <property name="maximumSize">
+       <size>
+        <width>800</width>
+        <height>400</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>openCameraBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>openCameraBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectContractBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>selectContractBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openMonitorBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>openMonitorBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>analysePicBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>analysePicBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>testInfoBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>testInfoBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>193</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>personalInfoBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>personalInfoBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>petKindSelect</sender>
+   <signal>activated(QString)</signal>
+   <receiver>petKindSelect</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
