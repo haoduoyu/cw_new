@@ -6,211 +6,173 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>754</width>
-    <height>600</height>
+    <width>747</width>
+    <height>554</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0">
-     <widget class="QPushButton" name="openCameraBtn">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="text">
-       <string>开启摄像头</string>
-      </property>
-     </widget>
+   <widget class="QPushButton" name="analysePicBtn">
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>130</y>
+      <width>120</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>分析照片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectContractBtn">
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>70</y>
+      <width>120</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择联系人</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="infoTextBrowser">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>691</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>800</width>
+      <height>400</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="personalInfoBtn">
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>190</y>
+      <width>120</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>个人信息</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="testInfoBtn">
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>160</y>
+      <width>120</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>测试信息</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openMonitorBtn">
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>100</y>
+      <width>120</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开启实时监控</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openCameraBtn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>4</y>
+      <width>120</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开启摄像头</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="petKindSelect">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>114</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>猫</string>
+     </property>
     </item>
-    <item row="0" column="1" rowspan="7">
-     <widget class="QGraphicsView" name="cameraView"/>
+    <item>
+     <property name="text">
+      <string>狗</string>
+     </property>
     </item>
-    <item row="0" column="2" rowspan="7">
-     <widget class="QGraphicsView" name="picView"/>
+    <item>
+     <property name="text">
+      <string>鼠</string>
+     </property>
     </item>
-    <item row="1" column="0">
-     <widget class="QComboBox" name="petKindSelect">
-      <item>
-       <property name="text">
-        <string>猫</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>狗</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>鼠</string>
-       </property>
-      </item>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QPushButton" name="selectContractBtn">
-      <property name="text">
-       <string>选择联系人</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QPushButton" name="openMonitorBtn">
-      <property name="text">
-       <string>开启实时监控</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QPushButton" name="analysePicBtn">
-      <property name="text">
-       <string>分析照片</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QPushButton" name="testInfoBtn">
-      <property name="text">
-       <string>测试信息</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0">
-     <widget class="QPushButton" name="personalInfoBtn">
-      <property name="text">
-       <string>个人信息</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="0" colspan="3">
-     <widget class="QTextBrowser" name="infoTextBrowser">
-      <property name="maximumSize">
-       <size>
-        <width>800</width>
-        <height>400</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   </widget>
+   <widget class="QLabel" name="cameraLabel">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>271</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:1px solid black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="picLabel">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>10</y>
+      <width>271</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:1px solid black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>openCameraBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>openCameraBtn</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>65</x>
-     <y>23</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>65</x>
-     <y>23</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>selectContractBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>selectContractBtn</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>65</x>
-     <y>91</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>65</x>
-     <y>91</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>openMonitorBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>openMonitorBtn</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>65</x>
-     <y>125</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>65</x>
-     <y>125</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>analysePicBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>analysePicBtn</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>65</x>
-     <y>159</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>65</x>
-     <y>159</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>testInfoBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>testInfoBtn</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>65</x>
-     <y>193</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>65</x>
-     <y>193</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>personalInfoBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>personalInfoBtn</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>65</x>
-     <y>227</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>65</x>
-     <y>227</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>petKindSelect</sender>
-   <signal>activated(QString)</signal>
-   <receiver>petKindSelect</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>65</x>
-     <y>56</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>65</x>
-     <y>56</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
