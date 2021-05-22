@@ -53,7 +53,7 @@ def check_pic(image):
     # return lst['result'][0]['keyword']
 
 
-class BtnEvents:
+class MainBtnEvents:
 
     @staticmethod
     def open_camera_btn_event():

@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from event.btn_events import BtnEvents, GlobalObj
+from event.main_btn_events import MainBtnEvents, GlobalObj
 
 
 class Ui_MainWindow(object):
@@ -63,13 +63,13 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.openCameraBtn.clicked.connect(BtnEvents.open_camera_btn_event)
-        self.selectContractBtn.clicked.connect(BtnEvents.select_contract_btn_event)
-        self.openMonitorBtn.clicked.connect(BtnEvents.open_monitor_btn_event)
-        self.analysePicBtn.clicked.connect(BtnEvents.analyse_pic_btn_event)
-        self.testInfoBtn.clicked.connect(BtnEvents.test_info_btn_event)
-        self.personalInfoBtn.clicked.connect(BtnEvents.personal_info_btn_event)
-        self.petKindSelect.activated['QString'].connect(BtnEvents.pet_kind_btn_event)
+        self.openCameraBtn.clicked.connect(MainBtnEvents.open_camera_btn_event)
+        self.selectContractBtn.clicked.connect(MainBtnEvents.select_contract_btn_event)
+        self.openMonitorBtn.clicked.connect(MainBtnEvents.open_monitor_btn_event)
+        self.analysePicBtn.clicked.connect(MainBtnEvents.analyse_pic_btn_event)
+        self.testInfoBtn.clicked.connect(MainBtnEvents.test_info_btn_event)
+        self.personalInfoBtn.clicked.connect(MainBtnEvents.personal_info_btn_event)
+        self.petKindSelect.activated['QString'].connect(MainBtnEvents.pet_kind_btn_event)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
