@@ -12,7 +12,8 @@ class GlobalObj:
 class LoginBtnEvents:
     QUERY_SQL = "select username from users where username = '%s' and password = '%s'"
 
-    def login_btn_event(self):
+    @staticmethod
+    def login_btn_event():
         username = GlobalObj.target.usernameEdit.text()
         password = GlobalObj.target.passwordEdit.text()
 
@@ -28,7 +29,12 @@ class LoginBtnEvents:
         main_view.setupUi(GlobalObj.main_window)
         GlobalObj.main_window.show()
 
-    def register_btn_event(self):
+    @staticmethod
+    def register_btn_event():
+        """
+        注册按钮事件
+        :return:
+        """
         register_view = Ui_RegisterWindow()
         register_view.set_login_view(LoginBtnEvents)
         register_view.setupUi(GlobalObj.main_window)
